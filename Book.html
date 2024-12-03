@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المكتبة – الكتب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مجموعتنا من الكتب</h1>
+  </header>
+  <nav>
+    <a href="home.html">الرئيسية</a>
+    <a href="AboutUs.html">من نحن</a>
+    <a href="Books.html">الكتب</a>
+  </nav>
+  <div class="container">
+    <table border="1" cellspacing="0" cellpadding="10" id="books-table">
+      <thead>
+        <tr>
+          <th>رمزالكتاب</th>
+          <th>ISBN</th>
+          <th>العنوان</th>
+          <th>السعر</th>
+          <th>إظهار التفاصيل</th>
+          <th>اختيار</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>978-9770916738</td>
+          <td>ألف ليلة وليلة</td>
+          <td>25000 ل.س</td>
+          <td><input type="checkbox" onclick="showDetails(this, 'details-001')"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr id="details-001" class="details-row" style="display: none;">
+          <td colspan="6">
+            <div class="book-details">
+              <img src="images/1.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+              <div>
+                <p><strong>الناشر:</strong> دار المعارف</p>
+                <p><strong>تصنيف الكتاب:</strong> قصص شعبية</p>
+                <p><strong>ملخص:</strong> كتاب أسطوري يضم مجموعة من القصص الشعبية من الشرق األوسط وجنوب آسيا وشمال إفريقيا،
+                    تم جمعها خالل العصر الذهبي لإلسالم. يتم سرد القصص ضمن إطار قصة مركزية تتضمن الشخصية
+                    الرئيسية، شهرزاد، التي تحكي حكايات للملك شهريار لتأجيل إعدامه.</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>978-9770916745</td>
+          <td>قبل أن تبدأ البرمجة</td>
+          <td>30000 ل.س</td>
+          <td><input type="checkbox" onclick="showDetails(this, 'details-002')"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr id="details-002" class="details-row" style="display: none;">
+          <td colspan="6">
+            <div class="book-details">
+              <img src="images/2.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+              <div>
+                <p><strong>الناشر:</strong> مكتبة البرمجة</p>
+                <p><strong>تصنيف الكتاب:</strong> تكنلوجيا</p>
+                <p><strong>ملخص:</strong> يقدم هذا الكتاب شرحاً وافياً لأساسيات البرمجة باستخدام لغة برمجة سهلة الفهم، موجهاً للمبتدئين الذين يرغبون في تعلم البرمجة من الصفر. يغطي الكتاب المفاهيم الأساسية مثل المتغيرات، الهياكل الشرطية، الحلقات، الدوال، وهياكل البيانات، بالإضافة إلى تقديم أمثلة تطبيقية وتمارين عملية لتعزيز الفهم وتطوير المهارات البرمجية. كما يتناول الكتاب أفضل الممارسات في كتابة الكود وتنظيمه، مما يساعد القراء على بناء أساس قوي يمكنهم من تطوير تطبيقات وبرامج فعّالة. إنه مرجع مثالي لمن يسعى لدخول عالم البرمجة بثقة وكفاءة.</p>
+              </div>
+            </div>
+        </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>978-9770916752</td>
+          <td>فن الكتابة</td>
+          <td>20000 ل.س</td>
+          <td><input type="checkbox" onclick="showDetails(this, 'details-003')"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr id="details-003" class="details-row" style="display: none;">
+          <td colspan="6">
+            <div class="book-details">
+              <img src="images/5.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+              <div>
+                <p><strong>الناشر:</strong> دار الكتابة</p>
+                <p><strong>تصنيف الكتاب:</strong> أدب عربي  </p>
+                <p><strong>ملخص:</strong> يهدف هذا الكتاب إلى تعزيز مهارات الكتابة الإبداعية والتعبيرية، ويقدم نصائح عملية وتقنيات تساعد الكتاب في تنظيم أفكارهم، واستخدام اللغة بفعالية، وإبراز أسلوبهم الشخصي في الكتابة. إنه دليل شامل للمهتمين بتطوير قدراتهم في الكتابة بمختلف أنواعها.</p>
+              </div>
+            </div>
+        </td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>978-9770916769</td>
+          <td>أساسيات الذكاء الاصطناعي</td>
+          <td>35000 ل.س</td>
+          <td><input type="checkbox" onclick="showDetails(this, 'details-004')"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr id="details-004" class="details-row" style="display: none;">
+          <td colspan="6">
+            <div class="book-details">
+              <img src="images/4.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+              <div>
+                <p><strong>الناشر:</strong> تقنيات العصر</p>
+                <p><strong>تصنيف الكتاب:</strong>تكنلوجيا</p>
+                <p><strong>ملخص:</strong> يقدم هذا الكتاب استعراضاً شاملاً لمجال الذكاء الاصطناعي، موضحاً أسسه النظرية وتطبيقاته العملية، بما في ذلك التعلم الآلي، الشبكات العصبية، ورؤية الحاسوب. يُعد مرجعاً قيّماً للمبتدئين والمحترفين لفهم كيفية استخدام الذكاء الاصطناعي في حل المشكلات وتطوير التقنيات الحديثة.</p>
+              </div>
+            </div>
+        </td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>978-9770916776</td>
+          <td>الأدب العربي</td>
+          <td>28000 ل.س</td>
+          <td><input type="checkbox" onclick="showDetails(this, 'details-005')"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr id="details-005" class="details-row" style="display: none;">
+          <td colspan="6">
+            <div class="book-details">
+              <img src="images/3.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+              <div>
+                <p><strong>الناشر:</strong> دار الأدب</p>
+                <p><strong>تصنيف الكتاب:</strong> أدب عربي</p>
+                <p><strong>ملخص:</strong> هذا الكتاب يعرض مجموعة مميزة من النصوص الأدبية في الأدب العربي، تجمع بين الشعر والنثر، وتبرز جمال اللغة العربية وإبداع الكتّاب في التعبير عن المشاعر والأفكار، مما يجعله مرجعاً غنياً لمحبي الأدب والثقافة.</p>
+              </div>
+            </div>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="text-align: right; margin-top: 20px;">
+        <button id="followButton" onclick="showForm()">متابعة</button>
+    </div>
+  </div>
+  <div class="container" id="form-container" style="display: none;">
+    <div class="contact-card">
+        <h2>معلومات مقدم الطلب</h2>
+        <form id="userForm" novalidate>
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName"  pattern="^[\u0621-\u064A\s]+$" placeholder="أدخل الاسم الكامل">
+            <span class="error-message" id="fullNameError"></span>
+            
+            <label for="nationalId">الرقم الوطني:</label>
+            <input type="text" id="nationalId" name="nationalId" required pattern="^\d{11}$" placeholder="أدخل الرقم الوطني (11 خانة)">
+            <span class="error-message" id="nationalIdError"></span>
+            
+            <label for="birthDate">تاريخ الولادة:</label>
+            <input type="date" id="birthDate" name="birthDate">
+            <span class="error-message" id="birthDateError"></span>
+            
+            <label for="mobileNumber">رقم الموبايل:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" pattern="^09\d{8}$" placeholder="أدخل رقم الموبايل (يجب أن يبدأ بـ 09)">
+            <span class="error-message" id="mobileNumberError"></span>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="أدخل البريد الإلكتروني">
+            <span class="error-message" id="emailError"></span>
+            
+            <div id="selected-books">
+                <h3>الكتب المختارة:</h3>
+                <ul id="book-list"></ul>
+                <p>المجموع الكلي: <span id="total-price">0</span> ل.س</p>
+            </div>
+            
+            <div style="text-align: right; margin-top: 20px;">
+                <button type="submit">إرسال</button>
+            </div>
+        </form>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 مكتبة النور. جميع الحقوق محفوظة.</p>
+    <p>تم التطوير في 2024/12/2.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js" defer></script>
+</body>
+</html>

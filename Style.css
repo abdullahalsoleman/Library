@@ -1,0 +1,144 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  direction: rtl; 
+}
+
+header {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  background: #2d3436;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fdcb6e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #6c5ce7;
+  margin-bottom: 1em;
+  text-align: right; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: right; 
+}
+
+table th {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.contact-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 30px;
+}
+
+button {
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #fdcb6e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+form label {
+  font-weight: bold;
+  text-align: right; 
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+.error-message {
+  color: red;          
+  font-weight: bold;   
+  font-size: 0.9em;    
+  margin-top: 5px;     
+}
+
+@media (max-width: 768px) {
+  table, form {
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
+  }
+}
